@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приглашение на свадьбу — Максим и Марьям</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap');
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            background-color: #000;
+            font-family: 'Cormorant Garamond', serif;
+            color: #FFFFFF;
+        }
+
+        .bg-image {
+            /* ЗАМЕНИ ССЫЛКУ НИЖЕ НА ПРЯМУЮ ССЫЛКУ ТВОЕЙ КАРТИНКИ */
+            background-image: url('https://i.postimg.cc/X7XbNjBT/39F5732D-C0E9-45CE-AE0F-06F19A0C847E.jpg') !important;
+            background-size: cover !important;
+            background-position: center center !important;
+            background-attachment: scroll !important; /* Чтобы фон двигался при прокрутке */
+            min-height: 100vh;
+            width: 100%;
+            display: block;
+            position: relative;
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.7); /* Чуть светлее, чтобы видеть фон */
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 60px 0;
+        }
+
+        .main-content {
+            max-width: 650px;
+            width: 90%;
+            text-align: center;
+        }
+
+        .names-row {
+            font-size: clamp(2.5rem, 8vw, 3.8rem);
+            letter-spacing: 5px;
+            margin-bottom: 20px;
+            font-weight: 300;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .ampersand {
+            padding: 0 15px;
+            color: #f1d5a5;
+        }
+
+        .date-section {
+            margin: 50px 0;
+        }
+
+        .top-text-large {
+            text-transform: uppercase;
+            letter-spacing: 12px;
+            font-size: 1.6rem;
+            margin-bottom: 30px;
+            color: #f1d5a5;
+        }
+
+        .date-time-container {
+            border-top: 1px solid rgba(255,255,255,0.3);
+            border-bottom: 1px solid rgba(255,255,255,0.3);
+            padding: 30px 0;
+        }
+
+        .main-date-row, .time-row {
+            font-size: clamp(2.5rem, 10vw, 4rem);
+            letter-spacing: 15px;
+            font-weight: 300;
+            line-height: 1.2;
+        }
+
+        .location {
+            font-size: 2rem;
+            margin: 40px 0;
+            font-weight: 300;
+            line-height: 1.4;
+            color: #f1d5a5;
+        }
+
+        .guest-welcome {
+            margin: 20px auto 50px;
+            line-height: 1.8;
+            font-size: 1.3rem;
+            font-weight: 300;
+        }
+
+        .guest-welcome p:first-child {
+            font-size: 1.8rem;
+            color: #f1d5a5;
+            margin-bottom: 20px;
+        }
+
+        .countdown-container {
+            margin: 50px 0 70px;
+        }
+
+        .countdown-title {
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            font-size: 1.1rem;
+            color: #f1d5a5;
+            margin-bottom: 25px;
+        }
+
+        #countdown {
+            font-size: clamp(2.5rem, 12vw, 4rem);
+            color: #FFFFFF;
+            letter-spacing: 8px;
+            font-weight: 300;
+        }
+
+        .countdown-labels {
+            display: flex;
+            justify-content: center;
+            gap: clamp(10px, 5vw, 40px);
+            margin-top: 15px;
+        }
+
+        .countdown-labels span {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            color: #f1d5a5;
+            opacity: 0.8;
+            min-width: 50px;
+        }
+
+        .info-block {
+            margin-bottom: 50px;
+        }
+
+        .info-block h3 {
+            color: #f1d5a5;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .info-block p {
+            font-size: 1.15rem;
+            line-height: 1.7;
+            max-width: 500px;
+            margin: 0 auto 10px;
+            opacity: 0.9;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 18px 50px;
+            border: 1px solid #f1d5a5;
+            color: #f1d5a5;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            transition: 0.4s;
+        }
+
+        .btn:hover { background: #f1d5a5; color: #000; }
+        .deadline { font-size: 0.8rem; margin-top: 15px; opacity: 0.5; }
+    </style>
+</head>
+<body>
+
+    <div class="bg-image">
+        <div class="overlay">
+            <div class="main-content">
+                
+                <header class="hero">
+                    <div class="names-row">
+                        <span>Максим</span>
+                        <span class="ampersand">&</span>
+                        <span>Марьям</span>
+                    </div>
+                    
+                    <div class="date-section">
+                        <div class="top-text-large">Свадебный вечер</div>
+                        <div class="date-time-container">
+                            <div class="main-date-row">01.08.2026</div>
+                            <div class="time-row">17:30</div>
+                        </div>
+                    </div>
+                </header>
+
+                <section class="details">
+                    <p class="location">Винный бар «Правда»<br>ул. Карла Маркса, 22</p>
+                    
+                    <div class="guest-welcome">
+                        <p>Дорогой Гость!</p>
+                        <p>Мы рады сообщить Вам, что 1.08.2026 состоится самое главное торжество в нашей жизни — день нашей свадьбы!</p>
+                        <p>Приглашаем Вас разделить с нами радость этого незабываемого дня.</p>
+                    </div>
+
+                    <div class="countdown-container">
+                        <div class="countdown-title">До нашей встречи</div>
+                        <div id="countdown">00 : 00 : 00 : 00</div>
+                        <div class="countdown-labels">
+                            <span>Дней</span>
+                            <span>Часов</span>
+                            <span>Мин</span>
+                            <span>Сек</span>
+                        </div>
+                    </div>
+
+                    <div class="info-block">
+                        <h3>Дресс-код</h3>
+                        <p>Любые вечерние наряды, в которых вам удобно.</p>
+                        <p>Будем признательны за отсутствие ярких цветов.</p>
+                    </div>
+
+                    <div class="info-block">
+                        <h3>Формат вечера</h3>
+                        <p>Мы очень любим ваших детей, но этот вечер мы хотим провести в узком кругу взрослых. Надеемся на ваше понимание и возможность отдохнуть и расслабиться вместе с нами.</p>
+                    </div>
+
+                    <div class="info-block">
+                        <h3>Подарки</h3>
+                        <p>Мы понимаем, что дарить цветы на свадьбу — это традиция, но мы не сможем насладиться их красотой в полной мере...</p>
+                        <p>Будем рады любой другой альтернативе, например, бутылке вашего любимого вина для нашей коллекции.</p>
+                    </div>
+
+                    <div class="rsvp-section">
+                        <a href="#" class="btn" target="_blank">Подтвердить участие</a>
+                        <p class="deadline">до 15 июня</p>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function updateCountdown() {
+            const eventDate = new Date('August 1, 2026 17:30:00').getTime();
+            const now = new Date().getTime();
+            const diff = eventDate - now;
+
+            if (diff > 0) {
+                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+                const f = (num) => num < 10 ? '0' + num : num;
+
+                document.getElementById('countdown').innerHTML = 
+                    f(days) + ' : ' + f(hours) + ' : ' + f(minutes) + ' : ' + f(seconds);
+            } else {
+                document.getElementById('countdown').innerHTML = "Этот день настал!";
+            }
+        }
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>
+</body>
+</html>
