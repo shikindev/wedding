@@ -16,27 +16,25 @@
             color: #FFFFFF;
         }
 
-.bg-image {
-    background-image: url('https://i.postimg.cc/HnfZ45Pc/1234142341234.png') !important;
-    background-size: cover !important;
-    background-position: center center !important;
-    background-attachment: scroll !important;
-    min-height: 100vh;
-    width: 100%;
-    display: block;
-    position: relative;
-}
+        .bg-image {
+            background-image: url('https://i.postimg.cc/HnfZ45Pc/1234142341234.png') !important;
+            background-size: cover !important;
+            background-position: center center !important;
+            background-attachment: scroll !important;
+            min-height: 100vh;
+            width: 100%;
+            display: block;
+            position: relative;
+        }
 
-/* Специально для мобильных */
-@media (max-width: 480px) {
-    .bg-image {
-        /* Сдвигаем фокус картинки чуть выше или ниже, если нужно */
-        background-position: center 20% !important; 
-    }
-}
+        @media (max-width: 480px) {
+            .bg-image {
+                background-position: center 20% !important; 
+            }
+        }
 
         .overlay {
-            background: rgba(0, 0, 0, 0.7); /* Чуть светлее, чтобы видеть фон */
+            background: rgba(0, 0, 0, 0.7);
             min-height: 100vh;
             width: 100%;
             display: flex;
@@ -111,8 +109,28 @@
             margin-bottom: 20px;
         }
 
+        .info-block {
+            margin-bottom: 50px;
+        }
+
+        .info-block h3 {
+            color: #f1d5a5;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .info-block p {
+            font-size: 1.15rem;
+            line-height: 1.7;
+            max-width: 500px;
+            margin: 0 auto 10px;
+            opacity: 0.9;
+        }
+
         .countdown-container {
-            margin: 50px 0 70px;
+            margin: 70px 0 20px;
         }
 
         .countdown-title {
@@ -145,26 +163,6 @@
             min-width: 50px;
         }
 
-        .info-block {
-            margin-bottom: 50px;
-        }
-
-        .info-block h3 {
-            color: #f1d5a5;
-            text-transform: uppercase;
-            letter-spacing: 6px;
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-        }
-
-        .info-block p {
-            font-size: 1.15rem;
-            line-height: 1.7;
-            max-width: 500px;
-            margin: 0 auto 10px;
-            opacity: 0.9;
-        }
-
         .btn {
             display: inline-block;
             margin-top: 30px;
@@ -179,26 +177,24 @@
 
         .btn:hover { background: #f1d5a5; color: #000; }
         .deadline { font-size: 0.8rem; margin-top: 15px; opacity: 0.5; }
-        @media (max-width: 480px) {
-    #countdown {
-        font-size: 1.8rem !important; /* Уменьшаем размер */
-        letter-spacing: 4px !important; /* Сужаем расстояние между цифрами */
-    }
-    
-    .countdown-labels {
-        gap: 15px !important; /* Сближаем подписи (Дни, Часы) */
-    }
 
-    .countdown-labels span {
-        font-size: 0.6rem !important;
-        min-width: 40px !important;
-    }
-    
-    .main-date-row, .time-row {
-        font-size: 2.2rem !important; /* Дату тоже чуть уменьшим, чтобы не давила */
-        letter-spacing: 8px !important;
-    }
-}
+        @media (max-width: 480px) {
+            #countdown {
+                font-size: 1.8rem !important;
+                letter-spacing: 4px !important;
+            }
+            .countdown-labels {
+                gap: 15px !important;
+            }
+            .countdown-labels span {
+                font-size: 0.6rem !important;
+                min-width: 40px !important;
+            }
+            .main-date-row, .time-row {
+                font-size: 2.2rem !important;
+                letter-spacing: 8px !important;
+            }
+        }
     </style>
 </head>
 <body>
@@ -227,26 +223,16 @@
                     <p class="location">Винный бар «Правда»<br>ул. Карла Маркса, 22</p>
                     
                     <div class="guest-welcome">
-                        <p>Дорогой Гость!</p>
-                        <p>Мы рады сообщить Вам, что 1.08.2026 состоится самое главное торжество в нашей жизни — день нашей свадьбы!</p>
-                        <p>Приглашаем Вас разделить с нами радость этого незабываемого дня.</p>
-                    </div>
-
-                    <div class="countdown-container">
-                        <div class="countdown-title">До нашей встречи</div>
-                        <div id="countdown">00 : 00 : 00 : 00</div>
-                        <div class="countdown-labels">
-                            <span>Дней</span>
-                            <span>Часов</span>
-                            <span>Мин</span>
-                            <span>Сек</span>
-                        </div>
+                        <p>Дорогие наши, самые близкие люди!</p>
+                        <p>У нас для вас радостная новость: мы женимся! 🥂<br>
+                        И мы очень хотим, чтобы этот день прошёл не по строгим правилам, а в уютной, тёплой атмосфере — в кругу тех, кто нам действительно дорог!</p>
+                        <p>Будет душевно. Будет вкусно. Будет по-настоящему, по-семейному!</p>
                     </div>
 
                     <div class="info-block">
                         <h3>Дресс-код</h3>
-                        <p>Любые вечерние наряды, в которых вам удобно.</p>
-                        <p>Будем признательны за отсутствие ярких цветов.</p>
+                        <p>Приходите в том, в чём вам комфортно и радостно. Никаких строгих рамок — только вечерние наряды, в которых вы чувствуете себя красиво, легко и по-своему.</p>
+                        <p>Не важно, что это будет: платье, брючный костюм или любимый уютный образ. Главное — чтобы вы были с нами.</p>
                     </div>
 
                     <div class="info-block">
@@ -261,8 +247,19 @@
                     </div>
 
                     <div class="rsvp-section">
-                        <a href="#" class="btn" target="_blank">Подтвердить участие</a>
+                        <a href="https://forms.gle/LGoLuPXahaLMsQbx7" class="btn" target="_blank">Подтвердить участие</a>
                         <p class="deadline">до 15 июня</p>
+                    </div>
+
+                    <div class="countdown-container">
+                        <div class="countdown-title">До нашей встречи</div>
+                        <div id="countdown">00 : 00 : 00 : 00</div>
+                        <div class="countdown-labels">
+                            <span>Дней</span>
+                            <span>Часов</span>
+                            <span>Мин</span>
+                            <span>Сек</span>
+                        </div>
                     </div>
                 </section>
 
